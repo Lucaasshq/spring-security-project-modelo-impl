@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:18
+    container_name: chegaai_container
+    environment:
+      POSTGRES_DB: chegaai
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql
+
+
+volumes:
+  pgdata:  # Volume para guardar os dados do banco de forma permanente

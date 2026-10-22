@@ -1,0 +1,9 @@
+comandos no gradle kotlin
+
+Rodar a aplicação: ./gradlew bootRun
+
+Limpar e compilar: ./gradlew clean build
+
+Testar: ./gradlew test
+
+Comando para rodar o PMD : ./gradlew pmdMain
